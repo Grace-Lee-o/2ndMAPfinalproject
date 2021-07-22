@@ -690,7 +690,7 @@
                                     <action selector="previousMonth:" destination="jzd-F7-WOy" eventType="touchUpInside" id="kXU-Jj-WRt"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="fWH-3m-m1K">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="fWH-3m-m1K">
                                 <rect key="frame" x="-1" y="262" width="416.5" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glK-Iu-SUs">
@@ -738,33 +738,36 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="trQ-oE-wx1">
-                                <rect key="frame" x="73" y="317" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="trQ-oE-wx1">
+                                <rect key="frame" x="0.0" y="313" width="414" height="184"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3ul-R7-TNV">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="42" height="49"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="calCell" id="h8L-hl-2lk" customClass="CalendarCell" customModule="MAP" customModuleProvider="target">
-                                        <rect key="frame" x="56" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="W6C-K9-60v">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="42" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKd-nm-CUO">
-                                                    <rect key="frame" x="43" y="54" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKd-nm-CUO">
+                                                    <rect key="frame" x="16" y="1" width="26" height="46"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UKd-nm-CUO" firstAttribute="centerX" secondItem="W6C-K9-60v" secondAttribute="centerX" id="dRl-4X-jaM"/>
+                                                <constraint firstItem="UKd-nm-CUO" firstAttribute="centerY" secondItem="W6C-K9-60v" secondAttribute="centerY" constant="0.5" id="qhH-jT-mGS"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="42" height="49"/>
                                         <connections>
                                             <outlet property="dayOfMonth" destination="UKd-nm-CUO" id="dkw-rQ-pPi"/>
                                         </connections>
@@ -778,6 +781,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bNK-sG-zT7"/>
                         <color key="backgroundColor" red="0.97254901960784312" green="0.83529411764705885" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="trQ-oE-wx1" firstAttribute="top" secondItem="fWH-3m-m1K" secondAttribute="bottom" id="6Wy-Ie-Q7k"/>
+                            <constraint firstItem="trQ-oE-wx1" firstAttribute="leading" secondItem="bNK-sG-zT7" secondAttribute="leading" id="Q8B-Px-5qk"/>
+                            <constraint firstItem="bNK-sG-zT7" firstAttribute="trailing" secondItem="trQ-oE-wx1" secondAttribute="trailing" id="csK-67-Vk3"/>
+                            <constraint firstItem="bNK-sG-zT7" firstAttribute="bottom" secondItem="trQ-oE-wx1" secondAttribute="bottom" id="dVG-Zx-9pU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="I31-kX-4bE"/>
                     <connections>

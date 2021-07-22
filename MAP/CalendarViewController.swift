@@ -14,7 +14,8 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setCellsView()
+        setMonthView()
 
     }
     
@@ -36,13 +37,16 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
         var count: Int = 1
         
         while (count <= 42) {
-            if(count <= startingSpaces || count - startingSpaces > days) {
+            if(count <= startingSpaces || count - startingSpaces > daysInMonth) {
                 totalSquares.append("")
             }
             else {
                 totalSquares.append(String(count - startingSpaces))
             }
+            count += 1
         }
+        monthLabel.text = CalendarHelper().monthString(date: selectedDate) + " " + CalendarHelper().yearString(date: selectedDate)
+        collectionView.reloadData()
     }
     
     
@@ -60,11 +64,18 @@ class CalendarViewController: UIViewController, UICollectionViewDelegate, UIColl
 
     
     @IBAction func previousMonth(_ sender: Any) {
+        selectedDate = CalendarHelper().minusMonth(date: selectedDate)
+        setMonthView()
     }
+
     
     @IBAction func nextMonth(_ sender: Any) {
+        selectedDate = CalendarHelper().plusMonth(date: selectedDate)
+        setMonthView()
     }
     
-
+    override open var shouldAutorotate: Bool {
+        return false
+    }
 
 }

@@ -218,6 +218,10 @@
                                     <action selector="calendarLearnMoreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VhA-mi-w4j"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YWq-O5-Ouq">
+                                <rect key="frame" x="183" y="81" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.97076624629999997" green="0.83461713790000003" blue="0.5607322454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

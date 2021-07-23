@@ -1525,6 +1525,9 @@
                                 <state key="normal" title="Go To Monthly Calendar! ">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="jzd-F7-WOy" kind="presentation" modalPresentationStyle="fullScreen" id="bHg-QV-cfm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zUV-A4-FF4"/>
@@ -1596,8 +1599,9 @@
     <inferredMetricsTieBreakers>
         <segue reference="JVl-fa-c6g"/>
         <segue reference="4wf-Ae-qM3"/>
+        <segue reference="bHg-QV-cfm"/>
         <segue reference="2gd-6N-EXA"/>
-        <segue reference="mbN-e4-bh7"/>
+        <segue reference="VPd-FD-1HP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>

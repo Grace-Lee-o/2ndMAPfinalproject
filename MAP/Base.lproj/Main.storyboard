@@ -786,9 +786,11 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5i-MC-DM3">
-                                <rect key="frame" x="149" y="750" width="116" height="30"/>
+                                <rect key="frame" x="125" y="750" width="164" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Weekly Calendar"/>
+                                <state key="normal" title="Go To Weekly Calendar!">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="j0A-IC-QIJ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="JVl-fa-c6g"/>
                                 </connections>
@@ -1479,14 +1481,6 @@
                                     <outlet property="delegate" destination="j0A-IC-QIJ" id="Fkn-3w-sNK"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxF-EY-QPY">
-                                <rect key="frame" x="152" y="750" width="121" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Monthly Calendar"/>
-                                <connections>
-                                    <segue destination="Iov-8C-aZQ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="sBy-lX-Mwd"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZX-he-L4L">
                                 <rect key="frame" x="356" y="24" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1520,11 +1514,18 @@
                                 </prototypes>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FQi-Zf-IMw">
-                                <rect key="frame" x="-21" y="740" width="456" height="48"/>
+                                <rect key="frame" x="-16" y="740" width="456" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99802392719999999" green="0.73205822710000001" blue="0.52544772620000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eli-mB-Jw8">
+                                <rect key="frame" x="125" y="749" width="174" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go To Monthly Calendar! ">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zUV-A4-FF4"/>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.83529411760000005" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1593,10 +1594,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0dk-1P-dA6"/>
-        <segue reference="3w8-J7-8v9"/>
-        <segue reference="sBy-lX-Mwd"/>
-        <segue reference="xjp-mC-aAh"/>
+        <segue reference="JVl-fa-c6g"/>
+        <segue reference="4wf-Ae-qM3"/>
+        <segue reference="2gd-6N-EXA"/>
         <segue reference="mbN-e4-bh7"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1606,6 +1606,9 @@
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
         <image name="rectangle" catalog="system" width="128" height="93"/>
         <image name="square" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

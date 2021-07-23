@@ -23,6 +23,7 @@
 		75F9052226AA0E09003DC257 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9052126AA0E09003DC257 /* CalendarCell.swift */; };
 		75F9052426AA0F53003DC257 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9052326AA0F53003DC257 /* CalendarViewController.swift */; };
 		75F9052626AA1614003DC257 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9052526AA1614003DC257 /* CalendarHelper.swift */; };
+		75F9052A26AA8FE5003DC257 /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F9052926AA8FE5003DC257 /* WeeklyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		75F9052126AA0E09003DC257 /* CalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		75F9052326AA0F53003DC257 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		75F9052526AA1614003DC257 /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		75F9052926AA8FE5003DC257 /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				75E3E2A126A76BA900D2FDDE /* ViewController.swift */,
 				75F9052326AA0F53003DC257 /* CalendarViewController.swift */,
 				75E3E2A326A76BA900D2FDDE /* Main.storyboard */,
+				75F9052926AA8FE5003DC257 /* WeeklyViewController.swift */,
 				75F9052526AA1614003DC257 /* CalendarHelper.swift */,
 				75F9052126AA0E09003DC257 /* CalendarCell.swift */,
 				75E3E2A926A76BAB00D2FDDE /* Assets.xcassets */,
@@ -291,6 +294,7 @@
 				7594126326A89C6100525C4B /* ToDo.swift in Sources */,
 				75F9052626AA1614003DC257 /* CalendarHelper.swift in Sources */,
 				525AD65826A89FA50022748C /* AddToDoViewController.swift in Sources */,
+				75F9052A26AA8FE5003DC257 /* WeeklyViewController.swift in Sources */,
 				75E3E2A026A76BA900D2FDDE /* SceneDelegate.swift in Sources */,
 				7594126126A89C0900525C4B /* ToDoTableViewController.swift in Sources */,
 			);

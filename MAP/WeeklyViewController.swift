@@ -98,9 +98,11 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
         let event = Event().eventsForDate(date: selectedDate)[indexPath.row]
         cell.eventLabel.text = event.name + " " + CalendarHelper().timeString(date: event.date)
         return cell
+     
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool)
+    {
         super.viewDidAppear(animated)
         tableView.reloadData()
     }

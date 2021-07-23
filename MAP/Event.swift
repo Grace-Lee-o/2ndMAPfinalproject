@@ -15,7 +15,7 @@ class Event
     var name: String!
     var date: Date!
     
-    func eventsForDate(data: Data) -> [Event]
+    func eventsForDate(date: Date) -> [Event]
     {
         var daysEvents = [Event]()
         for event in eventsList

@@ -113,10 +113,10 @@ var selectedDate = Date()
 //
 //
 
-
 class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource,
                             UITableViewDelegate, UITableViewDataSource
 {
+    
     
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!

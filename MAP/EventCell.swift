@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EventCell: UITableView
+class EventCell: UITableViewCell
 {
     @IBOutlet weak var eventLabel: UILabel!
 }

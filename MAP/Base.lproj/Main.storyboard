@@ -139,7 +139,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="j0A-IC-QIJ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="0hM-vW-j0O"/>
+                                    <segue destination="j0A-IC-QIJ" kind="presentation" id="1Eo-az-5Ro"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0c-zc-QXK">
@@ -826,7 +826,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vfl-FU-e1v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4906" y="579"/>
+            <point key="canvasLocation" x="4619" y="1006"/>
         </scene>
         <!--Complete To Do View Controller-->
         <scene sceneID="J2p-vg-6uN">
@@ -1225,7 +1225,7 @@
             <objects>
                 <viewController id="j0A-IC-QIJ" customClass="WeeklyViewController" customModule="MAP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p8Y-3r-IDJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2b6-cp-Sx2">
@@ -1394,7 +1394,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="equalSpacing" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="08C-hN-TAF">
-                                <rect key="frame" x="2" y="312" width="411" height="21.5"/>
+                                <rect key="frame" x="2" y="258" width="411" height="21.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pta-Qe-phk">
                                         <rect key="frame" x="0.0" y="0.0" width="28" height="21.5"/>
@@ -1510,7 +1510,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="413" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRH-vr-ZkH">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCd-ib-g6o">
                                                     <rect key="frame" x="20" y="11" width="43" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1524,7 +1524,6 @@
                                 <connections>
                                     <outlet property="dataSource" destination="j0A-IC-QIJ" id="kQv-hF-bLu"/>
                                     <outlet property="delegate" destination="j0A-IC-QIJ" id="7Zk-WB-J1y"/>
-                                    <outlet property="eventLabel" destination="sRH-vr-ZkH" id="wbg-gB-2bi"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -1543,7 +1542,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R18-UA-51h" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5617.3913043478269" y="578.57142857142856"/>
+            <point key="canvasLocation" x="3340.579710144928" y="24.776785714285712"/>
         </scene>
         <!--Event Edit View Controller-->
         <scene sceneID="wnV-hi-HgC">
@@ -1568,7 +1567,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="j0A-IC-QIJ" kind="show" id="W4h-EB-r4C"/>
+                                    <segue destination="j0A-IC-QIJ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="W4h-EB-r4C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUH-7I-QO9">
@@ -1595,10 +1594,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JVl-fa-c6g"/>
-        <segue reference="4wf-Ae-qM3"/>
+        <segue reference="1Eo-az-5Ro"/>
+        <segue reference="3w8-J7-8v9"/>
         <segue reference="sBy-lX-Mwd"/>
-        <segue reference="2gd-6N-EXA"/>
+        <segue reference="xjp-mC-aAh"/>
         <segue reference="VPd-FD-1HP"/>
     </inferredMetricsTieBreakers>
     <resources>

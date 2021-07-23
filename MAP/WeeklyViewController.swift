@@ -4,6 +4,10 @@ var selectedDate = Date()
 
 class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource
 {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
     
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -92,7 +96,7 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
         return Event().eventsForDate(date: selectedDate).count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> EventCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID") as! EventCell
         let event = Event().eventsForDate(date: selectedDate)[indexPath.row]

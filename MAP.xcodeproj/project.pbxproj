@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		525AD65826A89FA50022748C /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525AD65726A89FA50022748C /* AddToDoViewController.swift */; };
 		525AD69926A9540A0022748C /* CompleteToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525AD69826A9540A0022748C /* CompleteToDoViewController.swift */; };
+		525AD69D26AAA1AE0022748C /* EventEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525AD69C26AAA1AE0022748C /* EventEditViewController.swift */; };
+		525AD69F26AAA1E30022748C /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525AD69E26AAA1E30022748C /* EventCell.swift */; };
+		525AD6A126AAA4EF0022748C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525AD6A026AAA4EF0022748C /* Event.swift */; };
 		7594126126A89C0900525C4B /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594126026A89C0900525C4B /* ToDoTableViewController.swift */; };
 		7594126326A89C6100525C4B /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594126226A89C6100525C4B /* ToDo.swift */; };
 		75E3E29E26A76BA900D2FDDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E3E29D26A76BA900D2FDDE /* AppDelegate.swift */; };
@@ -46,6 +49,9 @@
 /* Begin PBXFileReference section */
 		525AD65726A89FA50022748C /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
 		525AD69826A9540A0022748C /* CompleteToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteToDoViewController.swift; sourceTree = "<group>"; };
+		525AD69C26AAA1AE0022748C /* EventEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditViewController.swift; sourceTree = "<group>"; };
+		525AD69E26AAA1E30022748C /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		525AD6A026AAA4EF0022748C /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		7594126026A89C0900525C4B /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		7594126226A89C6100525C4B /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		75E3E29A26A76BA900D2FDDE /* MAP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +123,8 @@
 		75E3E29C26A76BA900D2FDDE /* MAP */ = {
 			isa = PBXGroup;
 			children = (
+				525AD69C26AAA1AE0022748C /* EventEditViewController.swift */,
+				525AD69E26AAA1E30022748C /* EventCell.swift */,
 				75E3E29D26A76BA900D2FDDE /* AppDelegate.swift */,
 				75E3E29F26A76BA900D2FDDE /* SceneDelegate.swift */,
 				75E3E2A126A76BA900D2FDDE /* ViewController.swift */,
@@ -133,6 +141,7 @@
 				7594126226A89C6100525C4B /* ToDo.swift */,
 				525AD65726A89FA50022748C /* AddToDoViewController.swift */,
 				525AD69826A9540A0022748C /* CompleteToDoViewController.swift */,
+				525AD6A026AAA4EF0022748C /* Event.swift */,
 			);
 			path = MAP;
 			sourceTree = "<group>";
@@ -286,10 +295,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				75F9052426AA0F53003DC257 /* CalendarViewController.swift in Sources */,
+				525AD69D26AAA1AE0022748C /* EventEditViewController.swift in Sources */,
 				75E3E2A226A76BA900D2FDDE /* ViewController.swift in Sources */,
 				75E3E29E26A76BA900D2FDDE /* AppDelegate.swift in Sources */,
+				525AD6A126AAA4EF0022748C /* Event.swift in Sources */,
 				525AD69926A9540A0022748C /* CompleteToDoViewController.swift in Sources */,
 				75E3E2A826A76BA900D2FDDE /* MAP.xcdatamodeld in Sources */,
+				525AD69F26AAA1E30022748C /* EventCell.swift in Sources */,
 				75F9052226AA0E09003DC257 /* CalendarCell.swift in Sources */,
 				7594126326A89C6100525C4B /* ToDo.swift in Sources */,
 				75F9052626AA1614003DC257 /* CalendarHelper.swift in Sources */,
